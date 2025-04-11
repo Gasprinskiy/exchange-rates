@@ -1,0 +1,28 @@
+.conversion-view {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    &-item {
+      display: flex;
+      gap: 10px;
+    }
+
+    &-skeleton {
+      height: 34px;
+    }
+
+    &-input {
+      width: 30%;
+    }
+
+    &-select {
+      width: calc(70% - 10px);
+    }
+  }
+}

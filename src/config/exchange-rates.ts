@@ -5,3 +5,7 @@ export const MainCurrency: ExchangeRateOption = {
   title: ExchangeRateTitles.rub,
   cur: 'rub',
 };
+export const DefaultExchangeOption: ExchangeRateOption = {
+  title: ExchangeRateTitles.usd,
+  cur: 'usd',
+};
