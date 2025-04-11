@@ -1,9 +1,7 @@
 import $api from '../client';
-import type { ExchangeRates } from '../types/exchange-rates';
+import type { ExchangeRates } from '@/shared/types/exchange-rates';
 
 export function getExchangeRates(): Promise<ExchangeRates> {
-  console.log('FUCK');
-
   return $api('/currency', {
     method: 'GET',
   });

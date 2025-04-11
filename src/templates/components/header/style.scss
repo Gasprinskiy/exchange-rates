@@ -1,0 +1,33 @@
+.app-page-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 16px;
+  border-bottom: 1px solid rgb(239, 239, 245);
+
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &-text {
+      font-size: 22px;
+      font-weight: 400;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__link {
+    color: inherit;
+
+    &.router-link-active {
+      color: #5fbc21;
+    }
+  }
+}
