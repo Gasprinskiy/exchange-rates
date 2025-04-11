@@ -60,8 +60,12 @@ function mapOptionsList(disabledValue: Currency): SelectMixedOption[] {
   }));
 }
 
-function onUpdateSelect(): void {
-  fistValueCalclulator.value = fistValue.value;
+function onUpdateSelect(type: 'first' | 'second'): void {
+  if (type === 'first') {
+    fistValueCalclulator.value = fistValue.value;
+  } else {
+    secondValueValueCalclulator.value = secondValue.value;
+  }
 }
 
 onMounted(() => fistValueCalclulator.value = 1);
